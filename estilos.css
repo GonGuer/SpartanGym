@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+*{font-family: 'Bebas Neue', sans-serif;
+    margin: 0;}
+
+body{box-sizing: border-box;
+    margin: 0%;}
+
+
+a{text-decoration: none; }
+
+
+/* ACA ARRANCA EL NAV */ 
+
+nav ul{
+    display: contents;
+    list-style: none;    
+}
+
+nav ul li a{text-decoration: none; color: #FD0505;}
+
+nav ul li a:hover{
+    color: white;
+}
+
+
+
+nav{display: flex;
+    background-color: black;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    color: #FD0505;
+    justify-content: space-between;
+    font-size: clamp(1.2rem, 4vw, 2.5rem);
+    }
+
+nav img{height: 120px;
+        cursor: pointer;}
+
+
+
+/* ACA ARRANCA EL HEADER */
+
+nav:nth-child(2){height: 600px;
+    display: flex;
+    overflow: hidden;
+    background-image: url(img/pesasbarra4.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;}
+
+header h1{
+    text-shadow: 5px 5px 10px black;
+    color: white;
+    font-size: clamp(6rem, 12vw, 8.75rem);
+}
+
+
+
+
+
+/* ACA ARRANCA EL BODY */
+
+section{padding-left: 15%;
+        padding-right: 15%;
+        padding-top: 60px;
+        font-size: clamp(1.5rem, 3vw, 3rem);
+        background-color: black;
+        color: white;
+        height: auto;
+        text-align: center;
+}
+
+section span{color: #FD0505;}
+
+
+
+/*DIV MEMBRESIA*/
+
+#membresia{width: 100%;
+    height: auto;
+    display: flex;
+    background-image: url(img/pesas1.jpeg);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    background-attachment: fixed;
+   
+}
+
+#membresia div{
+    font-size: 45px;
+    width: auto;
+    height: auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.658);
+    color: white;
+    border-radius: 20px;
+    align-items: center;
+}
+#membresia p{margin: 5px;}
+#membresia div hr{color: #950101;}
+#membresia div h2{font-size: 80px;}
+#membresia div button{
+    margin-top: 20px;
+    width: 100%;
+    font-size: 45px;
+    border-radius: 10px;
+    color: white;
+    background-color: #FD0505;
+    text-shadow: 1px 1px 15px black;
+}
+#membresia div button a{
+    color: white;
+}
+#membresia div button:hover{
+    background-color: #880000;
+    cursor: pointer;
+}
+
+
+#precio{font-size: 100px; color: #FD0505; text-shadow: 0px 0px 15px #fc3b3b;}
+#precio span{font-size: 60px;}
+.mem{font-size: 40px; color: rgb(156, 156, 156);}
+
+
+/* FOOTER */
+
+footer{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding: 20px 10%;
+    background-color: #fd0505;
+    font-size: clamp(1.4rem, 4vw, 2.2rem);}
+
+footer img{width: 80px; margin-right: 25px}
+
+footer div:nth-child(1){
+    display: flex;
+    margin-right: 5vw;
+    }
+
+i img{width: 30px; margin: 0;}
+
+iframe{margin: 3%; margin-left: 0%;}
+
+/*WSPP
+
+.wspp{display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px;
+    height: 60px;
+    box-shadow: 0 1px 10px black;
+}
+.wspp img{width: 60px;}
+*/
+
+
+
+
+
+
+
+
+/*MEDIA QUERY*/
+
+
+@media (max-width: 1000px){
+
+    /*FOOTER*/
+    iframe{width: 450px; height: 350px;}
+}
+
+@media (max-width: 768px){
+
+    /*FOOTER*/
+    footer img{width: 65px;}
+
+    i img{width: 24px;}
+
+    footer div:nth-child(1){
+        flex-direction: column;}
+
+    /*NAVEGACION*/
+     iframe{width: 400px; height: 300px;}
+
+    } 
+
+@media (max-width: 640px){
+
+    nav img{width: 80px;
+            height: 80px;}
+
+    nav{padding-left: 5%;
+        padding-right: 5%;}
+
+    nav ul{flex-direction: column;}
+
+    /*NAVEGACION*/
+    iframe{width: 280px; height: 200px;}
+    }
+
+@media (max-width: 480px){
+    
+    /*NAVEGACION*/
+    iframe{width: 200px; height: 180px;}
+    }
+
+   
+
